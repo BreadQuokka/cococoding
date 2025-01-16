@@ -1,0 +1,6 @@
+-- 코드를 입력하세요
+SELECT OUTS.ANIMAL_ID , OUTS.NAME
+FROM ANIMAL_OUTS AS OUTS
+WHERE OUTS.ANIMAL_ID NOT IN (SELECT INS.ANIMAL_ID
+                            FROM ANIMAL_INS AS INS)
+                            
